@@ -1,1 +1,1 @@
-# JavScript Tutorial
+# JavaScript Tutorial

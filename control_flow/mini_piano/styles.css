@@ -1,0 +1,81 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #143F6B;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  display: flex;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #dc2b2b;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #dc2b2b;
+}
+
+#btn{
+  padding: 1rem;
+  font-size: large;
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  right: 25%;
+  bottom: 10%;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+#btn:hover{
+  font-size: larger;
+  color: black;
+  background-color: rgb(117, 231, 50);
+  border-radius: 1rem;
+
+}
+
+#bbtn{
+  padding: 1rem;
+  font-size: large;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  right: 60%;
+  bottom: 10%;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+#bbtn:hover{
+  font-size: larger;
+  color: black;
+  background-color: rgb(117, 231, 50);
+  border-radius: 1rem;
+
+}
